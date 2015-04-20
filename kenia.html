@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Kenia's tests ya feel</title>
+	</head>
+	<body>
+
+		<!-- thead and tfoot-->
+		<table>
+			<thead>
+				<tr>
+					<th>This is data for the thead tag</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<td>This is data for the tfoot tag</td>
+				</tr>
+			</tfoot>
+		</table>
+
+		<!-- form -->
+		<form action="http://www.google.com" method="get" autocomplete="on" name="formName" target="_blank" oninput="o.value = a.valueAsNumber + b.valueAsNumber">
+			<p>Which animal is cuter?</p>
+				<label for="cats">Cats</label>
+				<input name="name" type="radio" id="cats" value="cats"><br>
+				<label for="dogs">Dogs</label>
+				<input name="name" type="radio" id="dogs" value="dogs"><br>
+			<p>Which Jonas Brothers is your favorite?</p>
+			<select>
+				<option value="Nick">Nick</option>
+				<option value="Joe">Joe</option>
+				<option value="Kevin">Kevin</option>
+			</select>
+			<p>Which is the best breakfast item?</p>
+			<input list="breakfast" name="breakfast">
+			<datalist id="breakfast">
+				<option value="Eggs Benedict">Eggs</option>
+				<option value="Bacon">Bacon</option>
+				<option value="Waffles">Waffles</option>
+				<option value="Pancakes">Pancakes</option>
+			</datalist>
+			<p>Who is your favorite athlete?</p>
+			<select>
+				<optgroup label="Soccer">
+					<option value="Beckham">David Beckham</option>
+					<option value="Solo">Hope Solo</option>
+				</optgroup>
+				<optgroup label="Basketball">
+					<option value="Kobe">Kobe Bryant</option>
+					<option value="James">Lebron James</option>
+				</optgroup>
+			</select><br>
+			<input name=a type=number step=any> +
+ 			<input name=b type=number step=any> =
+			<output name=o for="a b"></output>
+			<p>Form is 75 percent complete</p>
+			<progress value="75" max="100"></progress>
+			<p>In a few minutes you will achieve this:</p>
+			<meter value="1">100%</meter>
+			<p>Encryption level:</p>
+			<keygen name="security">
+			<fieldset>
+				<legend>Peronal Info:</legend>
+				Name: <input type="text"><br>
+			</fieldset>
+		</form>
+
+		<!-- script -->
+
+		<table>
+			<thead>
+				<tr>
+					<th>This is head data for temp table</th>
+				</tr>
+			</thead>
+			<tbody>
+				<template id="temp">
+					<tr>
+						<td>This is data for the temp table</td>
+					</tr>
+				</template>
+			</tbody>
+		</table>
+
+		<canvas id="myCanvas" width="200" height="200" style="border: 2px solid black">
+			Your browser does not support the canvas tag
+		</canvas>
+
+		<script type="text/javascript">
+			var template = document.querySelector("#temp");
+			var cells = template.content.cloneNode("td");
+			cells[0].textContent = "temp text";
+
+			var can = document.getElementById("myCanvas");
+			var x = can.getContext("2d");	
+			x.fillStyle = "#FF0000";
+			x.fillRect(0,0,150,75);
+		</script>
+		<noscript>Your browser does not support scripts</noscript>
+	</body>
+</html>
