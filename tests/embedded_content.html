@@ -1,62 +1,93 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Andrew's Embedded Content</title>
+	<title>Testing Embedded elements</title>
 	<style>
-		thead {color:blue;}
-		tbody {color:green;}
-
 		table, td {
 		    border: 1px solid black;
 		}
 	</style>
 </head>
 <body>
+	<h1>Embedded Content</h1>
+		<p>This page is testing embedded content elements of HTML. Tested here are:</p>
+		<ul>
+			<li>&lt;img&gt;</li>
+			<li>&lt;iframe&gt;</li>
+			<li>&lt;embed&gt;</li>
+			<li>&lt;object&gt; and &lt;param&gt;</li>
+			<li>&lt;video&gt;</li>
+			<li>&lt;audio&gt;</li>
+			<li>&lt;source&gt;</li>
+			<li>&lt;track&gt;</li>
+			<li>&lt;map&gt; and &lt;area&gt;</li>
+		</ul>
+		<a href="../index.html">Return to Index</a>
+		<hr>
+
 	<div>
+		<h2>Below is a &lt;img&gt; element</h2>
 		<p>Embedded picture of Monish:</p>
 		<img src="https://scontent-sjc.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/396587_4197536611310_192185000_n.jpg?oh=ccc7553bcfa9b1317204fac71fec6caf&amp;oe=55DF051E"
 			alt="Monish's Face">
+		<hr>
 	</div>
 
 	<div>
+		<h2>Below is a &lt;iframe&gt; element</h2>
 		<p>iframe of FB:</p>
 		<iframe src="http://www.w3schools.com">
 			<p>Browser does not support iframe.</p>
 		</iframe>
+		<hr>
 	</div>
 
 	<div>
+		<h2>Below is an &lt;embed&gt; element</h2>
 		<p>Embedded animation:</p>
 		<embed src="https://usatthebiglead.files.wordpress.com/2015/02/dog.gif?w=1000">
+		<hr>
 	</div>
 
 	<div>
+		<h2>Below are the &lt;object&gt; and &lt;param&gt; elements</h2>
 		<p>Object tag:</p>
 		<object data="http://www.quackit.com/music/lostmojo.wav">
 			<param name="autoplay" value="false">
 			<param name="controller" value="true">
 		</object>
+		<hr>
 	</div>
 
 	<div>
+		<h2>Below are the &lt;video&gt; and &lt;source&gt; elements</h2>
 		<p>Video tag:</p>
 		<video width="320" height="240" controls>
 			<source src="http://www.w3schools.com/tags/movie.mp4" type="video/mp4">
 			<source src="http://www.w3schools.com/tags/movie.ogg" type="video/ogg">
 			Your browser does not support the video tag.
 		</video>
+		<hr>
 	</div>
 
 	<div>
+		<h2>Below are the &lt;audio&gt; and &lt;source&gt; elements</h2>
 		<p>Audio tag:</p>
 		<audio controls>
 			<source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mp3">
 			<source src="http://www.w3schools.com/tags/horse.ogg" type="audio/ogg">
 			Your browser does not support the audio element.
 		</audio>
+		<hr>
 	</div>
 
 	<div>
+		<h2>Below is the &lt;track&gt; element</h2>
+		<hr>
+	</div>
+
+	<div>
+		<h2>Below are the &lt;map&gt; and &lt;area&gt; elements</h2>
 		<img src="http://www.w3schools.com/tags/planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
 
 		<map name="planetmap">
@@ -64,19 +95,8 @@
 			<area shape="circle" coords="90,58,3" alt="Mercury" href="http://www.w3schools.com/tags/mercur.htm">
 			<area shape="circle" coords="124,58,8" alt="Venus" href="http://www.w3schools.com/tags/venus.htm">
 		</map>
-	</div>
+		<hr>
 
-	<table>
-		<thead>
-			<tr>
-				<td>blue</td>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>green</td>
-			</tr>
-		</tbody>
-	</table>
+	</div>
 </body>
 </html>

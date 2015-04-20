@@ -2,24 +2,32 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Kenia's tests ya feel</title>
+		<title>Testing form elements</title>
 	</head>
 	<body>
+		<h1>Forms</h1>
+		<p>This page is testing form elements of HTML. Tested here are:</p>
+		<ul>
+			<li>&lt;form&gt;</li>
+			<li>&lt;label&gt;</li>
+			<li>&lt;input&gt;</li>
+			<li>&lt;button&gt;</li>
+			<li>&lt;select&gt;</li>
+			<li>&lt;datalist&gt;</li>
+			<li>&lt;optgroup&gt;</li>
+			<li>&lt;option&gt;</li>
+			<li>&lt;textarea&gt;</li>
+			<li>&lt;keygen&gt;</li>
+			<li>&lt;output&gt;</li>
+			<li>&lt;progress&gt;</li>
+			<li>&lt;meter&gt;</li>
+			<li>&lt;fieldset&gt;</li>
+			<li>&lt;legend&gt;</li>
+		</ul>
+		<a href="../index.html">Return to Index</a>
+		<hr>
 
-		<!-- thead and tfoot-->
-		<table>
-			<thead>
-				<tr>
-					<th>This is data for the thead tag</th>
-				</tr>
-			</thead>
-			<tfoot>
-				<tr>
-					<td>This is data for the tfoot tag</td>
-				</tr>
-			</tfoot>
-		</table>
-
+		<h2>All form elements are used in the folowing form:</h2>
 		<!-- form -->
 		<form action="http://www.google.com" method="get" autocomplete="on" name="formName" target="_blank" oninput="o.value = a.valueAsNumber + b.valueAsNumber">
 			<p>Which animal is cuter?</p>
@@ -65,39 +73,10 @@
 				<legend>Peronal Info:</legend>
 				Name: <input type="text"><br>
 			</fieldset>
+			<textarea>This is a textarea</textarea>
+			<textarea readonly>This is a readonly textarea</textarea>
+			<button type="button">I am a button.</button>
 		</form>
-
-		<!-- script -->
-
-		<table>
-			<thead>
-				<tr>
-					<th>This is head data for temp table</th>
-				</tr>
-			</thead>
-			<tbody>
-				<template id="temp">
-					<tr>
-						<td>This is data for the temp table</td>
-					</tr>
-				</template>
-			</tbody>
-		</table>
-
-		<canvas id="myCanvas" width="200" height="200" style="border: 2px solid black">
-			Your browser does not support the canvas tag
-		</canvas>
-
-		<script type="text/javascript">
-			var template = document.querySelector("#temp");
-			var cells = template.content.cloneNode("td");
-			cells[0].textContent = "temp text";
-
-			var can = document.getElementById("myCanvas");
-			var x = can.getContext("2d");	
-			x.fillStyle = "#FF0000";
-			x.fillRect(0,0,150,75);
-		</script>
-		<noscript>Your browser does not support scripts</noscript>
+		<hr>
 	</body>
 </html>

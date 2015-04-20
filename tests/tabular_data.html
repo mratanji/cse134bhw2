@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Testing Tabular Data elements</title>
+    <style>
+        #table1, #th1, #td1 {
+            border: 1px solid black;
+        }
+        thead {color:blue;}
+        tbody {color:green;}
+    </style>
+</head>
+<body>
+    <h1>Tabular Data</h1>
+    <p>This page is testing tabular data elements of HTML. Tested here are:</p>
+    <ul>
+        <li>&lt;table&gt;</li>
+        <li>&lt;caption&gt;</li>
+        <li>&lt;colgroup&gt;</li>
+        <li>&lt;col&gt;</li>
+        <li>&lt;tbody&gt; and &lt;thead&gt;</li>
+        <li>&lt;tfoot&gt;</li>
+        <li>&lt;tr&gt;</li>
+        <li>&lt;td&gt;</li>
+        <li>&lt;th&gt;</li>
+    </ul>
+    <a href="../index.html">Return to Index</a>
+    <hr>
+    
+    <h2>Below are &lt;table&gt;, &lt;caption&gt;, &lt;tr&gt;, &lt;th&gt;, and &lt;td&gt;elements.</h2>
+        <p> This is a plain table without captions or styling:</p>
+        <table>
+            <tr>
+                <th >Month</th>
+                <th >Savings</th>
+            </tr>
+            <tr>
+                <td >January</td>
+                <td >$100</td>
+            </tr>
+        </table>
+        <br><br>
+        <p>This is a table without styling, but includes a caption:</p>
+        <table>
+            <caption>Caption: Monthly Savings</caption>
+            <tr>
+                <th>Month</th>
+                <th>Savings</th>
+            </tr>
+            <tr>
+                <td>January</td>
+                <td>$100</td>
+            </tr>
+        </table>
+        <br><br>
+        <p>This table has CSS styling and a caption element:</p>
+        <table id = "table1">
+            <caption>Caption: Monthly Savings</caption>
+            <tr>
+                <th id = "th1">Month</th>
+                <th id = "th2">Savings</th>
+            </tr>
+            <tr>
+                <td id= "td1">January</td>
+                <td id= "td2">$100</td>
+            </tr>
+        </table>
+    <hr>
+
+    <h2>Below are &lt;table&gt;, &lt;colgroup&gt;, and &lt;col&gt; elements</h2>
+        <p>This table has css styling, without a caption, and with edits to the column background using colgroup and col</p>
+        <table id="table2">
+           <colgroup>
+               <col span="1" style="background-color:blue">
+               <col style="background-color:#00ffff">
+            </colgroup>  
+            <tr>
+                <th id="th3">Month</th>
+                <th id="th4">Savings</th>
+            </tr>
+            <tr>
+                <td id="td3">January</td>
+                <td id="td4">$100</td>
+            </tr>
+        </table>
+    <hr>
+
+    <h2>Below are &lt;tbody&gt;, &lt;thead&gt;, and &lt;tfoot&gt; elements</h2>
+        <table>
+        <thead>
+            <tr>
+                <th>This is data for the thead element</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>This is data for the tbody element</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>This is data for the tfoot element</td>
+            </tr>
+        </tfoot>
+        </table>
+    <hr>
+</body>
+</html>

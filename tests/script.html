@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Testing script elements</title>
+	</head>
+	<body>
+		<h1>Script</h1>
+		<p>This page is testing script elements of HTML. Tested here are:</p>
+		<ul>
+			<li>&lt;script&gt;</li>
+			<li>&lt;noscript&gt;</li>
+			<li>&lt;template&gt;</li>
+			<li>&lt;canvas&gt;</li>
+		</ul>
+		<a href="../index.html">Return to Index</a>
+		<hr>
+
+		<h2>All script elements are used below:</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>This is head data for temp table</th>
+					</tr>
+				</thead>
+				<tbody>
+					<template id="temp">
+						<tr>
+							<td>This is data for the temp table</td>
+						</tr>
+					</template>
+				</tbody>
+			</table>
+
+			<canvas id="myCanvas" width="200" height="200" style="border: 2px solid black">
+				Your browser does not support the canvas tag
+			</canvas>
+
+			<script type="text/javascript">
+				var template = document.querySelector("#temp");
+				var cells = template.content.cloneNode("td");
+				cells[0].textContent = "temp text";
+
+				var can = document.getElementById("myCanvas");
+				var x = can.getContext("2d");	
+				x.fillStyle = "#FF0000";
+				x.fillRect(0,0,150,75);
+			</script>
+			<noscript>Your browser does not support scripts</noscript>
+		<hr>
+	</body>
+</html>
