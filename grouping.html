@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Testing Grouping elements</title>
+	</head>
+	<body>
+		<h1>Grouping</h1>
+		<p>This page is testing grouping elements of HTML. Tested here are:</p>
+		<ul>
+			<li>&lt;p&gt;</li>
+			<li>&lt;pre&gt;</li>
+			<li>&lt;hr&gt;</li>
+			<li>&lt;blockquote&gt;</li>
+			<li>&lt;ol&gt;</li>
+			<li>&lt;ul&gt;</li>
+			<li>&lt;li&gt;</li>
+			<li>&lt;dl&gt;</li>
+			<li>&lt;dt&gt;</li>
+			<li>&lt;dd&gt;</li>
+			<li>&lt;figure&gt;</li>
+			<li>&lt;figcaption&gt;</li>
+			<li>&lt;div&gt;</li>
+			<li>&lt;main&gt;</li>
+		</ul>
+		<a href="/index.html">Return to Index</a>
+
+		<hr>
+		<h2>Below is a &lt;p&gt; element.</h2>
+			<p>This is a &lt;p&gt; element. It holds paragraphs of text.</p>
+			<p>This is what happens when you have a &lt;p&gt; element right after another</p>
+
+		<hr>
+		<h2>Below is a &lt;pre&gt; element.</h2>
+			  Text that is supposed to have two spaces before it without the &lt;pre&gt; element.
+	  		<pre>  Text that has two spaces before it with the &lt;pre&gt; element. The &lt;pre&gt; element keeps preformatted content. </pre>
+
+  		<hr>
+	  	<h2>Below is a &lt;hr&gt; element.</h2>
+	  		<hr>
+	  		<p>&lt;hr&gt; elements are horizontal dividers between content, they can be used to seperate sections of text or the webpage.</p>
+  		
+		<hr>
+  		<h2>Below is a &lt;blockquote&gt; element.</h2>
+	  		<blockquote>"This is a &lt;blockquote&gt; element. It can be used with the cite tag to categorize quotes and attribute authors and sources"
+	  		</blockquote>
+
+	  	<hr>
+  		<h2>Below is a &lt;ol&gt; element.</h2>
+  			<p>&lt;ol&gt; elements are ordered lists, where changing the order of the elements would chnage the meaning of the information. Each element of the list can have a type attribute and value attribute assigned.</p>
+  			<p>This is a list, in order, of the elements tested on this page:</p>
+  			<ol>
+				<li value="1">&lt;p&gt;</li>
+				<li value="2">&lt;pre&gt;</li>
+				<li value="3">&lt;hr&gt;</li>
+				<li value="4">&lt;blockquote&gt;</li>
+				<li value="5">&lt;ol&gt;</li>
+				<li value="6">&lt;ul&gt;</li>
+				<li value="7">&lt;li&gt;</li>
+				<li value="8">&lt;dl&gt;</li>
+				<li value="9">&lt;dt&gt;</li>
+				<li value="10">&lt;dd&gt;</li>
+				<li value="11">&lt;figure&gt;</li>
+				<li value="12">&lt;figcaption&gt;</li>
+				<li value="13">&lt;div&gt;</li>
+				<li value="14">&lt;main&gt;</li>
+			</ol>
+
+		<hr>
+		<h2>Below is a &lt;ul&gt; element.</h2>
+			<p>&lt;ul&gt; elements are unordered lists, where the order that the elements are shown does not matter</p>
+			<ul>
+				<li>This</li>
+				<li>lists</li>
+				<li>order</li>
+				<li>doesn't</li>
+				<li>matter.</li>
+				<li>But, if it was scrambled, the text wouldn't make sense.</li>
+			</ul>
+
+			<hr>
+			<h2>The &lt;li&gt; element.</h2>		
+				<p>The &lt;li&gt; element is used to indicate elements in either a &lt;ol&gt; or &lt;ul&gt; element. It MUST be inside one in order ot validate correctly. For an example, look at the bullet points for &lt;ol&gt; and &lt;ul&gt; above.</p>
+
+			<hr>
+			<h2>The &lt;dl&gt;, &lt;dt&gt;, and &lt;dd&gt; elements</h2>
+				<p>The &lt;dl&gt;, &lt;dt&gt;, and &lt;dd&gt; elements are description lists. If you have a &lt;dl&gt; element and either a &lt;dt&gt; or &lt;dd&gt; element nested in it, you MUST have both &lt;dt&gt; and &lt;dd&gt; elements, otherwise it is non-conforming. The correct version with all tags is:</p>
+				<dl>
+				    <dt>Pooh Bear</dt>
+				    <dd>Favorite Disney Character</dd>
+				    <dt>Kungfu Panda</dt>
+				    <dd>Favorite Movie</dd>
+			  	</dl>
+			  	An incorrect version of the &lt;dl&gt;, &lt;dt&gt;, and &lt;dd&gt; elements is <a href="bad_dl.html">here</a>, which will not validate.
+			
+			<hr>
+			<h2>Below is the &lt;div&gt; element.</h2>		
+				<div>This text is contained in a &lt;div&gt; element. &lt;div&gt; elements are like vertical containers that can used to seperate content on pages. They can be assigned id attributes to help with JS functions.
+				</div>
+				<div>This is another &lt;div&gt; element right under the last one.</div>
+				<div>And another one.</div>
+
+			<hr>
+	</body>
+</html>
